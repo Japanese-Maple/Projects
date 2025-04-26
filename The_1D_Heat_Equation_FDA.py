@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 n = 300
-m = 10000
+m = 1000
 l1 = 0
-l2 = 1
+l2 = 3
 dx = (l2-l1)/(n+1)
 dt = dx**2/4
 
@@ -20,7 +20,7 @@ def A(m):
     return a
 
 def f(x):
-    return (1-x)*x*(np.cos(7*np.pi*x)**2 + 1)
+    return (l2-x)*x*(np.cos(7*np.pi*x)**2 + 1)
 
 v = np.zeros((m, n))
 v[0, :] = f(x_j)  # Initial condition
@@ -35,7 +35,7 @@ line, = HE.plot(x_bc, v_bc, label=f't=0.00')
 IS = HE.plot(x_bc, np.concatenate(([0], f(x_j), [0])), linestyle = 'dashed')
 
 HE.set_xlim(l1, l2)
-HE.set_ylim(0, 1)
+HE.set_ylim(0, max(f(x_j) + 0.3))
 HE.set_aspect(aspect='equal', adjustable='box')
 HE.set_xlabel('x')
 HE.set_ylabel('v(x,t)')
@@ -58,6 +58,11 @@ ani.save("heat_equation.mp4", writer="ffmpeg", fps=30, dpi=300)
 
 
 plt.show()
+
+
+
+
+
 
 
 
