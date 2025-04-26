@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
+# Parameters
+
 n = 300
 m = 1000
 l1 = 0
@@ -18,6 +20,8 @@ def A(m):
     np.fill_diagonal(a[:-1,1:], -1)
     np.fill_diagonal(a[1:,:-1], -1)
     return a
+    
+# Initial condition
 
 def f(x):
     return (l2-x)*x*(np.cos(3*np.pi*x)**2 + 1)
