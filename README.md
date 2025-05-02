@@ -15,8 +15,8 @@ This repository contains numerical projects combining **applied mathematics**, *
 - Python 3
 - NumPy
 - Matplotlib
-- Matplotlib Widgets (Slider, Buttons)
-- FFmpeg (for high-quality video exports)
+- Sympy
+- Scipy
 
 ## What You Will Find
 - Explicit time-stepping solvers for PDEs
