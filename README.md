@@ -25,7 +25,7 @@ This repository contains projects combining **applied mathematics**, **physics**
 ## What You Will Find
 
 * Explicit solvers for PDEs and ODEs: **solhe, solwe, solpo**
-* Fourier-space methods for fast and accurate processing
+* Fourier-space methods for signal approximation and compression
 * Comparisons of **FNOs and CNNs** on numerical PDE tasks
 * Animated thermal diffusion, wave propagation, and vector field visualizations
 * Ready-to-adapt templates for scientific simulations
