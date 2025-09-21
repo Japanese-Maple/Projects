@@ -201,7 +201,6 @@ def update(frame):
 
     return line1, line2, line3, dot1, dot2, dot3, *trail_lines_red, *trail_lines_blue, *trail_lines_black
 
-# ✅ NOTE: blit=False to allow axis updates!
 anim = FuncAnimation(fig, update, frames=num_frames, init_func=init,
                      interval=10, blit=False)
 
